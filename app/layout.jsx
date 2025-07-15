@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={jetBrainsMono.variable}
+        className={`mx-4 md:mx-0 ${jetBrainsMono.variable}`}
       >
         <Header />
         <StairEffect />

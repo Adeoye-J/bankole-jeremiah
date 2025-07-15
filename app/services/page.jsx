@@ -8,27 +8,33 @@ const services = [
     {
         number: "01",
         title: "Web Development",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad ducimus veritatis odit",
+        description: "I build responsive, fast, and scalable web applications using modern technologies like React.js, Node.js, and more to deliver clean and functional digital experiences.",
         href: ""
     },
     {
         number: "02",
-        title: "UI/UX Design",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad ducimus veritatis odit",
+        title: "SEO Optimization",
+        description: "Improve your website’s visibility and ranking on search engines with clean code, performance tuning, and structured content practices.",
         href: ""
     },
     {
         number: "03",
-        title: "Logo Design",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad ducimus veritatis odit",
+        title: "Web Development Tutoring",
+        description: "I provide hands-on, beginner-to-advanced training in web development, helping students and enthusiasts learn HTML, CSS, JavaScript, and popular frameworks.",
         href: ""
     },
     {
         number: "04",
-        title: "SEO Optimization",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad ducimus veritatis odit",
+        title: "IT Support Services",
+        description: "Offering general IT support including system setup, troubleshooting, network diagnostics, and ensuring smooth day-to-day technical operations.",
         href: ""
     },
+    // {
+    //     number: "05",
+    //     title: "Freelance Web Development",
+    //     description: "From landing pages to full-stack solutions, I collaborate with businesses and individuals to deliver tailor-made freelance web development services.",
+    //     href: ""
+    // },
 ]
 
 

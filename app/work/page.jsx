@@ -16,7 +16,7 @@ const projects = [
         title: "project 1",
         description: "Get real time notifications, monitor your apps, and communicate with your team, using Telex app.",
         stack: [
-            {name: "Next Js"}, {name: "Tailwind CSS"},
+            {name: "Next Js"}, {name: "Tailwind CSS"}, {name: "TypeScript"}, {name: "Radix UI"}, {name: "Framer Motion"},
         ],
         image: "/assets/work/telex.jpg",
         live: "https://telex.im/",
@@ -28,7 +28,7 @@ const projects = [
         title: "project 2",
         description: "A platform that helps patients book appointments with doctors and specialists.",
         stack: [
-            {name: "React Js"}, {name: "Tailwind CSS"}, {name: "Node Js"}
+            {name: "React Js"}, {name: "Tailwind CSS"}, {name: "Node Js"}, {name: "Context API"}, {name: "Axios"}, {name: "Stripe"}, {name: "Express Js"}, {name: "Json Web Token"}, {name: "MongoDB"}, {name: "Cloudinary"},
         ],
         image: "/assets/work/caresync.jpg",
         live: "https://caresync-frontend.onrender.com/",
@@ -40,7 +40,7 @@ const projects = [
         title: "project 3",
         description: "A website that helps one Reclaim his or her Mental Health Stability",
         stack: [
-            {name: "React Js"}, {name: "Tailwind CSS"}, {name: "Shadcn"}
+            {name: "React Js"}, {name: "Tailwind CSS"}, {name: "Shadcn"}, {name: "Framer Motion"}, {name: "Axios"},
         ],
         image: "/assets/work/tinka.jpg",
         live: "https://tinkahealthservices.com/",
@@ -52,7 +52,7 @@ const projects = [
         title: "project 4",
         description: "A user-friendly platform that connects individuals with affordable dental care solutions.",
         stack: [
-            {name: "React Js"}, {name: "Tailwind CSS"}
+            {name: "React Js"}, {name: "Tailwind CSS"}, {name: "Framer Motion"}, {name: "Email Js"}, {name: "Radix UI"},
         ],
         image: "/assets/work/caredental.jpg",
         live: "https://caredentalsavings.com/",
@@ -64,7 +64,7 @@ const projects = [
         title: "project 5",
         description: "Online bookstore with categories, favorites, and seamless cart/purchase options.",
         stack: [
-            {name: "React Js"}, {name: "Tailwind CSS"}
+            {name: "React Js"}, {name: "Tailwind CSS"}, {name: "Stripe"}, {name: "Context API"},
         ],
         image: "/assets/work/vbook.jpg",
         live: "https://v-book-one.vercel.app/",
@@ -76,7 +76,7 @@ const projects = [
         title: "project 6",
         description: "A blog hub for reading, commenting, and discovering similar books from favorite authors.",
         stack: [
-            {name: "React Js"}, {name: "Tailwind CSS"}
+            {name: "React Js"}, {name: "Tailwind CSS"}, {name: "Stripe"}, {name: "Context API"},
         ],
         image: "/assets/work/elevate.jpg",
         live: "https://elevate-lemon.vercel.app",
@@ -88,7 +88,7 @@ const projects = [
         title: "project 7",
         description: "Tour booking site with details, search, and favorites for a personalized experience.",
         stack: [
-            {name: "React Js"}, {name: "Tailwind CSS"}
+            {name: "React Js"}, {name: "Tailwind CSS"}, {name: "Stripe"}, {name: "Context API"},
         ],
         image: "/assets/work/tratour.jpg",
         live: "https://tratour.vercel.app",
@@ -125,7 +125,7 @@ const Work = () => {
                             <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
                             <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>{project.category} project</h2>
                             <p className='text-white/60'>{project.description}</p>
-                            <ul className='flex gap-4'>
+                            <ul className='flex flex-wrap gap-4'>
                                 {
                                     project.stack.map((item, index) => (
                                         <li key={index} className="text-xl text-accent">
@@ -137,7 +137,7 @@ const Work = () => {
                             </ul>
                             <div className="border border-white/20"></div>
                             <div className="flex items-center gap-4">
-                                <Link href={project.live}>
+                                <Link href={project.live} target='_blank'>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -149,7 +149,7 @@ const Work = () => {
                                         </Tooltip>
                                     </TooltipProvider>
                                 </Link>
-                                <Link href={project.github}>
+                                <Link href={project.github} target='_blank'>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">

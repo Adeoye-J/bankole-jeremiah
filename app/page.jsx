@@ -31,13 +31,10 @@ const Home = () => {
                         <div className="flex flex-col xl:flex-row items-center gap-6 xl:gap-8">
                             <a href="/assets/resume/Jeremiah Bankole Resume - Frontend.pdf" target='_blank'>
                                 <Button className='uppercase flex items-center gap-2' variant={"outline"} size={"lg"}>
-                                    {/* <Link href={"/assets/resume/Jeremiah Bankole Resume - Frontend.pdf"}> */}
-                                        <FiDownload className='text-xl' />
-                                        Download Resume
-                                    {/* </Link> */}
+                                    <FiDownload className='text-xl' />
+                                    Download Resume
                                 </Button>
                             </a>
-                            {/* <a href=""></a> */}
 
                             <div className="mb-8 xl:mb-0">
                                 <Socials containerStyles={"flex gap-6"} iconStyles={"w-9 h-9 border border-accent rounded-full flex justify-center items-center text-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"} />

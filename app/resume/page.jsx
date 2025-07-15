@@ -9,7 +9,7 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 import { motion } from 'framer-motion'
 
 const about = {
-    title: "About me",
+    title: "About Me",
     description: [
         "Hi, I'm Jeremiah Bankole, a passionate Full-Stack Web Developer with a strong focus on creating clean, user-friendly, and performance-driven websites and web applications.",
         "Over the years, I’ve gained hands-on experience building responsive frontend interfaces with tools like React.js, Tailwind CSS, and Framer Motion, while also working with Node.js, Express, MongoDB, and RESTful APIs to bring ideas to life on the backend.",
@@ -49,38 +49,38 @@ const about = {
 
 const experience = {
     icon: "/assets/resume/badge.svg",
-    title: "My experience",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nam fugiat rem assumenda aperiam quam itaque facere.",
+    title: "My Experience",
+    description: "Over the years, I’ve contributed to diverse projects as a developer and team lead, delivering scalable solutions and intuitive user experiences across web platforms.",
     items: [
         {
-            company: "Tech Solutions Inc.",
+            company: "Telex",
+            position: "Frontend Developer",
+            duration: "Jan 2025 - Present",
+        },
+        {
+            company: "Freelance",
             position: "Full Stack Developer",
-            duration: "2022 - Present",
+            duration: "Aug 2022 - Present",
         },
         {
-            company: "Wb Design Studio",
-            position: "Front-End Developer Intern",
-            duration: "Summer 2021",
+            company: "HNG Tech",
+            position: "Frontend Developer (Top 3.8%)",
+            duration: "Jan 2025 - Apr 2025",
         },
         {
-            company: "E-commerce Startup",
-            position: "Freelance Web Developer",
-            duration: "2020 - 2021",
+            company: "Programmify",
+            position: "Frontend Web Developer",
+            duration: "Jul 2024 - Oct 2024",
         },
         {
-            company: "Tech Academy",
-            position: "Teaching Assistant",
-            duration: "2019 - 2020",
+            company: "Zidio Development",
+            position: "Web Developer (Intern)",
+            duration: "Feb 2024 - Mar 2024",
         },
         {
-            company: "Digital Agency",
-            position: "UI/UX Designer",
-            duration: "2018 - 2019",
-        },
-        {
-            company: "Software Development Firm",
-            position: "Junior Developer",
-            duration: "2017 - 2018",
+            company: "Covenant University || Carovee Tech",
+            position: "IT Support Specialist",
+            duration: "Jul 2020 - Jan 2022",
         },
     ]
 }
@@ -88,46 +88,36 @@ const experience = {
 
 const education = {
     icon: "/assets/resume/cap.svg",
-    title: "My education",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nam fugiat rem assumenda aperiam quam itaque facere.",
+    title: "My Education",
+    description: "My academic journey has provided me with the technical knowledge and problem-solving skills that support my work as a developer.",
     items: [
         {
-            institution: "Online Course Platform",
-            degree: "Full Stack Web Development Bootcamp",
-            duration: "2023",
+            institution: "University of the People",
+            degree: "Bsc Computer Science",
+            duration: "2025",
         },
         {
-            institution: "Codecademy",
-            degree: "Front-End Track",
-            duration: "2022",
+            institution: "Federal University of Technology, Akure",
+            degree: "BTech Building Technology",
+            duration: "2025",
         },
         {
-            institution: "Online Course",
-            degree: "Programming Course",
-            duration: "2020 - 2021",
+            institution: "HNG Tech Institute",
+            degree: "Certified Frontend Developer",
+            duration: "2025",
         },
         {
-            institution: "Tech Institute",
-            degree: "Certified Web Developer",
-            duration: "2019",
-        },
-        {
-            institution: "Design School",
-            degree: "Diploma in Graphic Design",
-            duration: "2016 - 2018",
-        },
-        {
-            institution: "Community College",
-            degree: "Associate Degree in Computer Science",
-            duration: "2014 - 2016",
-        },
+            institution: "Coursera - Google",
+            degree: "Google IT Support Professional Certification",
+            duration: "2020",
+        }
     ]
 }
 
 
 const skills = {
-    title: "My skills",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nam fugiat rem assumenda aperiam quam itaque facere.",
+    title: "My Skills",
+    description: "I’ve developed a strong technical foundation across modern web technologies, tools, and best practices—enabling me to build performant, user-friendly, and maintainable applications.",
     skillList: [
         {
             icon: <FaHtml5 />,
@@ -208,13 +198,13 @@ const Resume = () => {
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className='text-4xl font-bold'>{education.title}</h3>
                                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{education.description}</p>
-                                <ScrollArea className="h-[400px]">
+                                <ScrollArea className="h-[420px]">
                                     <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                                         {
                                             education.items.map((item, index) => (
-                                                <li className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1" key={index}>
+                                                <li className="bg-[#232329] h-[195px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1" key={index}>
                                                     <span className='text-accent'>{item.duration}</span>
-                                                    <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.degree}</h3>
+                                                    <h3 className='text-xl max-w-[350px] min-h-[60px] text-center lg:text-left'>{item.degree}</h3>
                                                     <div className="flex items-center gap-3">
                                                         <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
                                                         <p className='text-white/60'>{item.institution}</p>
