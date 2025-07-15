@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairEffect from "@/components/StairEffect";
-
+import { Analytics } from "@vercel/analytics/next"
 
 const jetBrainsMono = JetBrains_Mono({
     variable: "--font-jetbrainsMono",
@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
         className={`mx-4 md:mx-0 ${jetBrainsMono.variable}`}
       >
         <Header />
+        <Analytics />
         <StairEffect />
         <PageTransition>
             {children}
